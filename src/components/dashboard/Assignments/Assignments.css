@@ -1,0 +1,14 @@
+.assignments {
+    background-color: #edf3f3;
+    padding: 20px;
+    margin-top: 100px;
+    font-family: Inter;
+}
+
+.assignments__cards {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px 35px;
+}
