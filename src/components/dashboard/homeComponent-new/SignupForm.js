@@ -76,7 +76,6 @@ export const SignupForm = () => {
   const [state2, setState2] = useState(false);
   const [value, setValue] = useState(false);
   const handleChange = (newValue) => {
-    console.log(newValue);
     setValue(newValue);
   };
   const [email, setEmail] = useState();
@@ -102,7 +101,12 @@ export const SignupForm = () => {
           <div className="modal__sec2">
             <CloseRoundedIcon onClick={() => setState(false)} />
             <div className="modal__content3">
-              <SignupForm2 value={value} setState={setState} setState2={setState2}  onChange={handleChange} />
+              <SignupForm2
+                value={value}
+                setState={setState}
+                setState2={setState2}
+                onChange={handleChange}
+              />
             </div>
             {/* <div className="modal__contentbottom">
               <hr />

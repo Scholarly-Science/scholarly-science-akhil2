@@ -27,9 +27,9 @@ export const SignupForm2 = (props) => {
   //   }
   // }
 
-  const handleButtonChange = () => {
-    if (values.college) {
-      console.log(values.college);
+  const handleButtonChange = (college) => {
+    if (college) {
+      console.log(college);
       props.onChange(false);
     }
   };
@@ -62,10 +62,11 @@ export const SignupForm2 = (props) => {
         degree: "",
         major: "",
       }}
-      // validationSchema={formSchema}
+      validationSchema={formSchema}
       // validator={() => ({})}
       onSubmit={(values) => {
-        console.log(values);
+        console.log(values.college);
+        handleButtonChange(values.college);
       }}
     >
       {({
@@ -246,7 +247,16 @@ export const SignupForm2 = (props) => {
                 onClick={() => {
                   props.setState2(true);
                 }}
-                disabled={props.value}
+                disabled={
+                  values.college.length <= 0 ||
+                  values.date.length <= 0 ||
+                  values.degree.length <= 0 ||
+                  values.major.length <= 0 ||
+                  errors.college ||
+                  errors.date ||
+                  errors.degree ||
+                  errors.major
+                }
               >
                 Signup
               </button>
