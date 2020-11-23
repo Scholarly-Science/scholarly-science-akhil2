@@ -784,7 +784,7 @@ transition: all 0.3s ease-in;
   }
   .MuiDialog-paperFullScreen {
     width: 90% !important;
-    height: 90% !important;
+    height: 100% !important;
   }
 
   .modal__contentbottom {
@@ -1040,6 +1040,7 @@ transition: all 0.3s ease-in;
     display: block;
     background: #fff url('../../images/homeasset/modal-mobile.png') no-repeat top;
     background-size: contain;
+    height: 100%;
   }
 
   .modal__sec1, .modal__sec2 {
