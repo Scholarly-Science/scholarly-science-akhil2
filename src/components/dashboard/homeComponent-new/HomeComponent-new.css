@@ -197,7 +197,7 @@ transition: all 0.3s ease-in;
   background: #eff2f6 url('../../images/homeasset/modal-bottom.png') no-repeat bottom;
   background-size: contain;
   width: 36.9%;
-  height: 100vh;
+  height: auto;
   border: 0px;
 }
 
@@ -209,6 +209,7 @@ transition: all 0.3s ease-in;
 
 .modal__content {
   padding: 2.5rem;
+  padding-bottom: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -553,10 +554,23 @@ transition: all 0.3s ease-in;
 }
 
 .modal__sec1__verify {
-  height: 100%;
+  height: auto;
 }
 
+/* .MuiDialog-paperScrollPaper {
+  display: table !important;
+} */
+
 @media (min-width: 2710px) {
+
+  .MuiDialog-paperScrollPaper {
+    display: table !important;
+  }
+
+/* .MuiDialog-paperScrollPaper {
+  display: table !important;
+} */
+
   .MuiDialog-paperFullScreen {
     height: 50% !important;
     width: 45% !important;
@@ -593,6 +607,10 @@ transition: all 0.3s ease-in;
 }
 
 @media (min-width: 2400px) and (max-width:2700) {
+
+  .MuiDialog-paperScrollPaper {
+    display: table !important;
+  }
   .MuiDialog-paperFullScreen {
     height: 55% !important;
     width: 50% !important;
@@ -629,21 +647,29 @@ transition: all 0.3s ease-in;
 }
 
 @media (min-width: 1850px) and (max-width: 2399px) {
+
+.modal__container {
+  height: 900px;
+}
+
+  .MuiDialog-paperScrollPaper {
+    display: table !important;
+  }
   .modal__content2 {
-    padding-top: 14vh;
+    padding-top: 10vh;
   }
 
   .modal__content3 {
-    padding-top: 22vh;
+    padding-top: 18vh;
   }
 
   .modal__content4 {
-    padding-top: 16vh;
+    padding-top: 12vh;
   }
 
   .MuiDialog-paperFullScreen {
     width: 68% !important;
-    height: 90% !important; 
+    height: 900px !important; 
   }
 
   .modal__contentbottom {
@@ -655,13 +681,20 @@ transition: all 0.3s ease-in;
   }
 
   .modal__sec2 > .MuiSvgIcon-root {
-    margin-right: 12.5%;
-    margin-top: 2.5%;
+    /* margin-right: 12.5%;
+    margin-top: 2.5%; */
+    margin-left: 34vw;
+    padding-top: 10px;
+    position: unset !important;
   }
 }
 
 
 @media (min-width: 1550px) and (max-width: 1849px) {
+
+  .MuiDialog-paperScrollPaper {
+    display: table !important;
+  }
   .modal__content2 {
     padding-top: 13vh;
   }
@@ -699,6 +732,10 @@ transition: all 0.3s ease-in;
 
 @media (max-width: 1549px) and (min-width: 1500px) {
 
+  .MuiDialog-paperScrollPaper {
+    display: table !important;
+  }
+
   .MuiDialog-paperFullScreen {
     height: 93% !important;
     width: 87% !important;
@@ -726,6 +763,10 @@ transition: all 0.3s ease-in;
 }
 
 @media (min-width: 1390px) and (max-width: 1499px) {
+
+  .MuiDialog-paperScrollPaper {
+    display: table !important;
+  }
   .modal__content2 {
     padding-top: 5.8rem;
   }
@@ -757,6 +798,10 @@ transition: all 0.3s ease-in;
 }
 
 @media (max-width: 1389px) and (min-width: 1300px) {
+
+  .MuiDialog-paperScrollPaper {
+    display: table !important;
+  }
   .signupButton2 {
     margin-left: 8vw;
   }
@@ -781,6 +826,10 @@ transition: all 0.3s ease-in;
 }
 
 @media (max-width: 1299px) and (min-width: 1101px) and (min-height: 1000px) {
+
+  .MuiDialog-paperScrollPaper {
+    display: table !important;
+  }
   
   .MuiDialog-paperFullScreen {
     width: 98% !important;
@@ -811,11 +860,67 @@ transition: all 0.3s ease-in;
   }
  
 } 
-@media (max-width: 1299px) and (min-width: 1101px) and (min-height: 700px) and (max-height: 999px)  {
+@media (max-width: 1299px) and (min-width: 1101px) and (min-height: 701px) and (max-height: 999px)  {
+
+  .MuiDialog-paperScrollPaper {
+  display: table !important;
+}
   
   .MuiDialog-paperFullScreen {
     width: 100% !important;
-    height: 90% !important;
+    height: 100% !important;
+  }
+
+  .modal__content2 {
+    padding-top: 12vh;
+  }
+
+  .modal__content3{
+    padding-left: 8% !important;
+    padding-right: 10% !important;
+    padding-top: 22vh !important;
+   }
+
+   .modal__content4 {
+    padding-top:  10vh !important;
+  }
+ 
+   .signupButton2 {
+     margin-left: 17% !important;
+   }
+
+   .modal__contentbottom {
+    padding-top: 0rem;
+  }
+
+  .modal__sec2 > .MuiSvgIcon-root {
+    right: 11%;
+    top: 4vh;
+  }
+
+  .modal__sec1 > img {
+    padding-top: 8vh;
+  }
+
+  .modal__sec1__verify > img {
+    padding-top: 5vh;
+  }
+ 
+} 
+
+@media (max-width: 1299px) and (min-width: 1101px) and (min-height: 600px) and (max-height: 700px)  {
+
+  .MuiDialog-paperScrollPaper {
+  display: table !important;
+}
+  
+  .MuiDialog-paperFullScreen {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .modal__content2 {
+    padding-top: 30vh;
   }
 
   .modal__content3{
@@ -837,14 +942,26 @@ transition: all 0.3s ease-in;
   }
 
   .modal__sec2 > .MuiSvgIcon-root {
-    right: 10%;
-    top: 8%;
+    right: 11%;
+    top: 4vh;
+  }
+
+  .modal__sec1 > img {
+    padding-top: 23vh;
+  }
+
+  .modal__sec1__verify > img {
+    padding-top: 5vh;
   }
  
 } 
 
 
 @media (max-width: 1100px) and (min-width: 777px) {
+
+  .MuiDialog-paperScrollPaper {
+    display: table !important;
+  }
   
   .MuiDialog-paperFullScreen {
     width: 100% !important;
@@ -868,6 +985,10 @@ transition: all 0.3s ease-in;
 }
 
 @media (max-width: 770px) {
+
+  .MuiDialog-paperScrollPaper {
+    display: table !important;
+  }
   .modal__content3{
    padding-left: 8%;
    padding-right: 12%;
