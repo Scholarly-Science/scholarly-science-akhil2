@@ -239,8 +239,8 @@ transition: all 0.3s ease-in;
 
 .modal__sec2 > .MuiSvgIcon-root {
   position: fixed;
-  top: 35px;
-  right: 11%;
+  top: 20px;
+  right: 11.5%;
   font-size: 35px !important;
   color: #999 !important;
   font-weight: 100 !important;
@@ -726,7 +726,7 @@ transition: all 0.3s ease-in;
 
   .modal__sec2 > .MuiSvgIcon-root {
     margin-right: 7%;
-    margin-top: 1%;
+    margin-top: 10px;
   }
 }
 
@@ -737,8 +737,8 @@ transition: all 0.3s ease-in;
   }
 
   .MuiDialog-paperFullScreen {
-    height: 93% !important;
-    width: 87% !important;
+    height: 100% !important;
+    width: 83% !important;
   }
   .modal__content2 {
     padding-top: 3.8rem;
@@ -749,16 +749,16 @@ transition: all 0.3s ease-in;
   }
 
   .modal__content4 {
-    padding-top: 6rem;
+    padding-top: 5rem;
   }
 
   .signupButton2 {
-    margin-left: 6vw;
+    margin-left: 5vw;
   }
 
   .modal__sec2 > .MuiSvgIcon-root {
-    margin-right: 4%;
-    margin-top: 1%;
+    margin-right: 5.5%;
+    margin-top: 8px;
   }
 }
 
@@ -793,7 +793,7 @@ transition: all 0.3s ease-in;
 
   .modal__sec2 > .MuiSvgIcon-root {
     margin-right: 3%;
-    margin-top: 2%;
+    margin-top: 8px;
   }
 }
 
