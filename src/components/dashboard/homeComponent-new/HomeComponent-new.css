@@ -652,6 +652,12 @@ transition: all 0.3s ease-in;
   height: 900px;
 }
 
+.modal__form > button {
+  margin-bottom: 0px !important;
+}
+
+
+
   .MuiDialog-paperScrollPaper {
     display: table !important;
   }
@@ -674,6 +680,9 @@ transition: all 0.3s ease-in;
 
   .modal__contentbottom {
     padding-top: 6rem;
+    position: fixed ;
+    bottom: 10% ;
+    padding-left: 9% ;
   }
 
   .signupButton2 {
@@ -725,8 +734,8 @@ transition: all 0.3s ease-in;
   }
 
   .modal__sec2 > .MuiSvgIcon-root {
-    margin-right: 7%;
-    margin-top: 10px;
+    margin-right: 6%;
+    margin-top: 40px;
   }
 }
 
@@ -736,16 +745,26 @@ transition: all 0.3s ease-in;
     display: table !important;
   }
 
+  .MuiDialog-container {
+    overflow-y: auto;
+    width: 83% !important;
+    margin-left: 9%;
+  }
+
+  /* .MuiDialog-container {
+    width: 83%;
+  } */
+
   .MuiDialog-paperFullScreen {
     height: 100% !important;
-    width: 83% !important;
+    width: 100% !important;
   }
   .modal__content2 {
-    padding-top: 3.8rem;
+    padding-top: 15%;
   }
 
   .modal__content3 {
-    padding-top: 8rem;
+    padding-top: 7rem;
   }
 
   .modal__content4 {
@@ -756,8 +775,12 @@ transition: all 0.3s ease-in;
     margin-left: 5vw;
   }
 
+.modal__sec1 > img {
+  padding-top: 5rem !important;
+}
+
   .modal__sec2 > .MuiSvgIcon-root {
-    margin-right: 5.5%;
+    margin-right: 6%;
     margin-top: 8px;
   }
 }
